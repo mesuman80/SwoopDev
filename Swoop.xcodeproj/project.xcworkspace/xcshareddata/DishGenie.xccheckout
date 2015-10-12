@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB1E0511-783F-48EA-8089-6E374496E8DE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DishGenie</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D67793365EC737F88EA1EE23D9329C78DE545D9</key>
+		<string>https://github.com/yappyapps/DGenie-iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DishGenie.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D67793365EC737F88EA1EE23D9329C78DE545D9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yappyapps/DGenie-iOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D67793365EC737F88EA1EE23D9329C78DE545D9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D67793365EC737F88EA1EE23D9329C78DE545D9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS%20Repository</string>
+		</dict>
+	</array>
+</dict>
+</plist>
