@@ -75,21 +75,21 @@
 }
 
 -(void)configureUIAppearances {
-    id tabbarAppearance = [UITabBar appearance];
-    id navigationBarAppearance = [UINavigationBar appearance];
-    id barBtnInNavigationBarAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil];
-     UIColor *tabbarTintColor = [UIColor colorWithRed:0.0/255.0 green:155.0/255.0 blue:187.0/255.0 alpha:1.0];
-    [tabbarAppearance setTintColor:tabbarTintColor];
-    UIImage *backIndicatorImage = [UIImage imageNamed:@"back_btn"];
-    backIndicatorImage = [backIndicatorImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [navigationBarAppearance setBackIndicatorImage:backIndicatorImage];
-    [navigationBarAppearance setBackIndicatorTransitionMaskImage:backIndicatorImage];
-    
-    NSDictionary *textAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],
-                                     NSFontAttributeName:[UIFont systemFontOfSize:14.0f]};
-    
-    [barBtnInNavigationBarAppearance setTitleTextAttributes:textAttributes forState:UIControlStateNormal];
-    [barBtnInNavigationBarAppearance setTitleTextAttributes:textAttributes forState:UIControlStateHighlighted];
+//    id tabbarAppearance = [UITabBar appearance];
+//    id navigationBarAppearance = [UINavigationBar appearance];
+//    id barBtnInNavigationBarAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil];
+//     UIColor *tabbarTintColor = [UIColor colorWithRed:0.0/255.0 green:155.0/255.0 blue:187.0/255.0 alpha:1.0];
+//    [tabbarAppearance setTintColor:tabbarTintColor];
+//    UIImage *backIndicatorImage = [UIImage imageNamed:@"back_btn"];
+//    backIndicatorImage = [backIndicatorImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    [navigationBarAppearance setBackIndicatorImage:backIndicatorImage];
+//    [navigationBarAppearance setBackIndicatorTransitionMaskImage:backIndicatorImage];
+//    
+//    NSDictionary *textAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],
+//                                     NSFontAttributeName:[UIFont systemFontOfSize:14.0f]};
+//    
+//    [barBtnInNavigationBarAppearance setTitleTextAttributes:textAttributes forState:UIControlStateNormal];
+//    [barBtnInNavigationBarAppearance setTitleTextAttributes:textAttributes forState:UIControlStateHighlighted];
 }
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url

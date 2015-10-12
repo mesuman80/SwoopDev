@@ -49,40 +49,32 @@
                                                 <animations/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log_logo" translatesAutoresizingMaskIntoConstraints="NO" id="aUs-ba-vPG">
-                                                <rect key="frame" x="216" y="173" width="168" height="190"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="190" id="XO1-OZ-QMM"/>
-                                                    <constraint firstAttribute="width" constant="168" id="qyY-bB-1Zd"/>
-                                                </constraints>
-                                            </imageView>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-Bi-mol" userLabel="Login View">
-                                                <rect key="frame" x="154" y="371" width="292" height="273"/>
+                                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-Bi-mol" userLabel="Login View">
+                                                <rect key="frame" x="154" y="300" width="292" height="313"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKv-gK-kIa" userLabel="Credentials View">
-                                                        <rect key="frame" x="8" y="8" width="276" height="189"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKv-gK-kIa" userLabel="Credentials View">
+                                                        <rect key="frame" x="8" y="8" width="276" height="200"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="jN9-4Q-s4c">
-                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="189"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="jN9-4Q-s4c">
+                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="200"/>
                                                                 <animations/>
                                                             </imageView>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9818236314" placeholder="Username" minimumFontSize="17" background="txt_field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-fh-8SE">
-                                                                <rect key="frame" x="14" y="27" width="248" height="40"/>
+                                                                <rect key="frame" x="14" y="50" width="248" height="36"/>
                                                                 <animations/>
                                                                 <color key="textColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                             </textField>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" placeholder="Password" minimumFontSize="17" background="txt_field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="h0b-wx-9xv">
-                                                                <rect key="frame" x="14" y="75" width="248" height="40"/>
+                                                                <rect key="frame" x="14" y="92" width="248" height="36"/>
                                                                 <animations/>
                                                                 <color key="textColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCx-kY-BT1" userLabel="Login">
-                                                                <rect key="frame" x="14" y="123" width="248" height="39"/>
+                                                                <rect key="frame" x="14" y="137" width="248" height="39"/>
                                                                 <animations/>
                                                                 <state key="normal" image="login_btn_inactive">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -91,6 +83,16 @@
                                                                     <action selector="signIn:" destination="HKf-4n-ONy" eventType="touchUpInside" id="ivl-GA-4Xu"/>
                                                                 </connections>
                                                             </button>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Country" placeholder="Username" minimumFontSize="17" background="txt_field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yd4-2u-971" userLabel="Tf Country">
+                                                                <rect key="frame" x="14" y="8" width="248" height="36"/>
+                                                                <animations/>
+                                                                <color key="textColor" red="0.0" green="0.60784313729999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                                <connections>
+                                                                    <action selector="openCountryView:" destination="HKf-4n-ONy" eventType="editingDidBegin" id="LJp-DP-9Nc"/>
+                                                                </connections>
+                                                            </textField>
                                                         </subviews>
                                                         <animations/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -103,8 +105,8 @@
                                                             <constraint firstAttribute="height" constant="189" id="vE4-9E-ylS"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-Dl-JIo">
-                                                        <rect key="frame" x="22" y="205" width="248" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-Dl-JIo">
+                                                        <rect key="frame" x="22" y="215" width="248" height="21"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="248" id="PJd-9U-u6G"/>
@@ -114,8 +116,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXF-LC-wjf" userLabel="Sign up">
-                                                        <rect key="frame" x="22" y="234" width="248" height="39"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXF-LC-wjf" userLabel="Sign up">
+                                                        <rect key="frame" x="22" y="245" width="248" height="39"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="39" id="8xY-IV-xyJ"/>
@@ -144,6 +146,14 @@
                                                     <constraint firstItem="KKv-gK-kIa" firstAttribute="top" secondItem="5tm-Bi-mol" secondAttribute="top" constant="8" id="yR8-na-4NN"/>
                                                 </constraints>
                                             </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="log_logo" translatesAutoresizingMaskIntoConstraints="NO" id="aUs-ba-vPG">
+                                                <rect key="frame" x="210" y="98" width="168" height="190"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="190" id="XO1-OZ-QMM"/>
+                                                    <constraint firstAttribute="width" constant="168" id="qyY-bB-1Zd"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,6 +192,7 @@
                     <navigationItem key="navigationItem" id="Akw-rc-Hgo"/>
                     <connections>
                         <outlet property="cn_LogoY" destination="SgS-X7-xrN" id="Wc7-dE-l33"/>
+                        <outlet property="tf_Country" destination="Yd4-2u-971" id="yKX-lw-F0n"/>
                         <outlet property="tf_Password" destination="h0b-wx-9xv" id="H3L-uv-hiT"/>
                         <outlet property="tf_Username" destination="DeI-fh-8SE" id="4Zd-bh-L3F"/>
                         <outlet property="view_Login" destination="5tm-Bi-mol" id="GHg-wc-UoW"/>
@@ -228,7 +239,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         <connections>
-                                                            <action selector="openCOuntryTable:" destination="PMp-bX-CRk" eventType="editingDidEnd" id="zPj-Ct-60i"/>
+                                                            <action selector="openCOuntryTable:" destination="PMp-bX-CRk" eventType="editingDidBegin" id="Ac0-pU-BCd"/>
                                                         </connections>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reg_sep" translatesAutoresizingMaskIntoConstraints="NO" id="QBk-ir-68w" userLabel="Separator">

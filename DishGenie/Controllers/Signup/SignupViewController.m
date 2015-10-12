@@ -16,7 +16,7 @@
 #define ACCEPTABLE_CHARECTERS @"0123456789"
 
 
-@interface SignupViewController () <UITextFieldDelegate>
+@interface SignupViewController () <UITextFieldDelegate,UIGestureRecognizerDelegate,CountryTableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *tf_Countrycode;
 
 @property (weak, nonatomic) IBOutlet UITextField *tf_Username;
@@ -55,11 +55,12 @@
 -(void)setInputView{
     
     
-    
     [self.tf_Countrycode setText:[self countryCode]];
     [self.tf_Countrycode setDelegate:self];
     self.tf_Countrycode.textAlignment = NSTextAlignmentLeft;
     [self.tf_Countrycode setUserInteractionEnabled:YES];
+    [self.tf_Countrycode endEditing:YES];
+
     
     
         
@@ -201,11 +202,15 @@
     NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"countries" ofType:@"json"]];
     NSError *localError = nil;
     NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&localError];
-
+    
     CountryTableView *countryTableView =  [[CountryTableView alloc]init];
     [countryTableView  setDelegate:self];
     countryTableView.countryList =(NSArray *)parsedObject;
-    [self presentViewController:countryTableView animated:YES completion:nil];
+    
+    
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:countryTableView];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
     
 }
 

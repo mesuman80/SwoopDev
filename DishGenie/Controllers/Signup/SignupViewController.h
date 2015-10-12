@@ -7,8 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "CountryTableView.h"
 
-@interface SignupViewController : BaseViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,CountryTableViewDelegate>
+@interface SignupViewController : BaseViewController 
 
 @end
